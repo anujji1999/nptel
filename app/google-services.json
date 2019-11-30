@@ -1,0 +1,160 @@
+{
+  "project_info": {
+    "project_number": "862491076156",
+    "firebase_url": "https://nptel-198211.firebaseio.com",
+    "project_id": "nptel-198211",
+    "storage_bucket": "nptel-198211.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862491076156:android:bb7806927c07b03e",
+        "android_client_info": {
+          "package_name": "com.example.user.npteldata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "862491076156-j1ddcfk166rg5r26en1fcpk70g1nrqfr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.npteldata",
+            "certificate_hash": "6f780a854e6d61cc9146a2952c47419796f9f22e"
+          }
+        },
+        {
+          "client_id": "862491076156-ek3gerh195j991d05mo46oggu7mr55sd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB31_lpbzv3rRNAEBNEe2gI0zF6AK48LI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "862491076156-ek3gerh195j991d05mo46oggu7mr55sd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862491076156:android:49f45da43c8be933",
+        "android_client_info": {
+          "package_name": "com.nptel.courses.online"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "862491076156-79ulmmelppflgkpaj26arrn0dcvmnqln.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nptel.courses.online",
+            "certificate_hash": "6f780a854e6d61cc9146a2952c47419796f9f22e"
+          }
+        },
+        {
+          "client_id": "862491076156-d43q7slc7q60n60ejs3jnuv3qfv39l1u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nptel.courses.online",
+            "certificate_hash": "c0c9e00131788ed39c11dbb70d4e2970a3582750"
+          }
+        },
+        {
+          "client_id": "862491076156-enhqogj7vccpuq184lo62c0g10gb7i0d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nptel.courses.online",
+            "certificate_hash": "603619b988b525fbc824e6e4a233683baa2d1e48"
+          }
+        },
+        {
+          "client_id": "862491076156-ek3gerh195j991d05mo46oggu7mr55sd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB31_lpbzv3rRNAEBNEe2gI0zF6AK48LI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "862491076156-ek3gerh195j991d05mo46oggu7mr55sd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-3518473983373193~1732062575"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862491076156:android:ae8a427271d634f6",
+        "android_client_info": {
+          "package_name": "ecelladgitm.com.data"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "862491076156-s9ji4cqrg1a8mhs3u8pg0km4t88t23o7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ecelladgitm.com.data",
+            "certificate_hash": "6f780a854e6d61cc9146a2952c47419796f9f22e"
+          }
+        },
+        {
+          "client_id": "862491076156-ek3gerh195j991d05mo46oggu7mr55sd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB31_lpbzv3rRNAEBNEe2gI0zF6AK48LI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "862491076156-ek3gerh195j991d05mo46oggu7mr55sd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

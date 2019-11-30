@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:algolia="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchActivity">
+
+    <com.algolia.instantsearch.ui.views.SearchBox
+        android:id="@+id/searchBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        algolia:submitButtonEnabled="true"
+        algolia:autofocus="true" />
+
+    <com.algolia.instantsearch.ui.views.Hits
+        android:id="@+id/instantSearchHits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        algolia:autoHideKeyboard="true"
+        algolia:itemLayout="@layout/hits_item" />
+    <TextView
+        android:id="@android:id/empty"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:text="@string/no_video_found_try_different_search_query"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

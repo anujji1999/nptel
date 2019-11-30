@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.nptel.courses.online.ISO8601"/>
+
+        <variable
+            name="video"
+            type="com.nptel.courses.online.entities.Video" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <com.nptel.courses.online.SmartImageView
+                android:id="@+id/video_thumbnail"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/video_thumbnail"
+                app:imagePlaceholder="@mipmap/no_image"
+                app:imageUrl="@{video.thumbnail}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/no_image" />
+
+            <TextView
+                android:id="@+id/video_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/video_thumbnail"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@{video.title}"
+                tool:text="Title Of The Video" />
+
+            <TextView
+                android:id="@+id/video_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{ISO8601.getTime(video.duration)}"
+                app:layout_constraintStart_toStartOf="@id/video_title"
+                app:layout_constraintTop_toBottomOf="@id/video_title"
+                tool:text="25:30" />
+
+            <ImageView
+                android:id="@+id/favourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/mark_favourite"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/add_to_playlist"
+                app:layout_constraintStart_toStartOf="@id/video_title"
+                app:srcCompat="@drawable/ic_star_border_black_24dp"
+                tool:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/add_to_playlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/add_to_playlist"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/share_video"
+                app:layout_constraintStart_toEndOf="@id/favourite"
+                app:srcCompat="@drawable/ic_playlist_add_black_24dp"
+                tool:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/share_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/share"
+                android:scaleType="fitEnd"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/delete_video"
+                app:layout_constraintStart_toEndOf="@id/add_to_playlist"
+                app:srcCompat="@drawable/ic_share_black_24dp"
+                tool:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/delete_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/share"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/share_video"
+                app:srcCompat="@drawable/ic_delete_black_24dp"
+                tool:visibility="visible" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

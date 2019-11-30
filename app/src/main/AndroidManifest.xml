@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nptel.courses.online">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
+
+        <activity
+            android:name=".activities.MainActivity"
+            android:configChanges="screenSize|orientation|keyboard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="nptel.page.link"
+                    android:scheme="http" />
+                <data
+                    android:host="nptel.page.link"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.CourseActivity"
+            android:configChanges="screenSize|orientation|keyboard" />
+
+        <activity
+            android:name=".activities.VideoActivity"
+            android:configChanges="screenSize|orientation|keyboard" />
+        <activity android:name=".WebViewActivity" />
+        <activity
+            android:name=".activities.CustomPlaylistActivity"
+            android:configChanges="screenSize|orientation|keyboard" />
+        <activity android:name=".activities.AboutUsActivity" />
+        <activity android:name=".SearchActivity"/>
+    </application>
+
+</manifest>

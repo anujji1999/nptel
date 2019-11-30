@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="@string/search"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/share_app"
+        android:icon="@drawable/ic_share_white_24dp"
+        android:title="@string/share_app" />
+
+    <item
+        android:id="@+id/change_course"
+        android:icon="@drawable/ic_change_course_white_24dp"
+        android:title="@string/change_course" />
+
+    <item
+        android:id="@+id/playlists"
+        android:title="@string/playlists" />
+
+    <item
+        android:id="@+id/favourite"
+        android:icon="@drawable/ic_star_black_24dp"
+        android:title="@string/favourite_list" />
+
+    <item
+        android:id="@+id/app_feedback"
+        android:title="@string/give_feedback" />
+
+    <item
+        android:id="@+id/about_us"
+        android:title="@string/about_us" />
+
+    <item
+        android:id="@+id/appreciate"
+        android:title="@string/appreciate" />
+
+</menu>
